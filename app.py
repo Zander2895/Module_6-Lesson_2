@@ -105,3 +105,6 @@ def get_sessions(member_id):
     cursor.close()
     conn.close()
     return jsonify(sessions), 200
+
+if __name__ == '__main__':
+    app.run(debug=True)
